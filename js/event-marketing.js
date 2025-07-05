@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ].forEach((item, index) => {
             const li = document.createElement('li');
-            li.className = "rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer border border-gray-200";
+            li.className = "rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer border border-gray-200";
             li.setAttribute('data-modal-target', `event-modal-${index}`);
             
             // Make the entire card clickable
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="p-3">
                     <div class="flex items-center gap-2">
                         <img src="${item.img}" alt="${item.name}" class="w-12 h-12 object-cover rounded" />
-                        <h4 class="text-base font-medium">${item.name}</h4>
+                        <h4 class="text-base font-medium font-display text-dark">${item.name}</h4>
                     </div>
-                    <p class="text-xs text-gray-600 mt-2">${item.summary}</p>
+                    <p class="text-xs text-gray-700 mt-2">${item.summary}</p>
                 </div>
             `;
             eventMarketingList.appendChild(li);
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ].forEach(item => {
             const li = document.createElement('div');
-            li.className = "border border-gray-200 rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer";
+            li.className = "border border-gray-200 rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer";
             
             // Make the entire card clickable
             li.onclick = function() {
@@ -102,9 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="p-3">
                     <div class="flex items-center gap-2">
                         <img src="${item.img}" alt="${item.name}" class="w-12 h-12 object-cover rounded" />
-                        <h4 class="text-base font-medium">${item.name}</h4>
+                        <h4 class="text-base font-medium font-display text-dark">${item.name}</h4>
                     </div>
-                    <p class="text-xs text-gray-600 mt-2">${item.summary}</p>
+                    <p class="text-xs text-gray-700 mt-2">${item.summary}</p>
                 </div>
             `;
             onePagerslist.appendChild(li);

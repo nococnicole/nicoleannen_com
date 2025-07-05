@@ -1,8 +1,106 @@
-/* Main Styles */
-h1, h2, h3 { font-family: 'Roboto Mono', monospace; }
-.section-fade { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
-.section-fade.visible { opacity: 1; transform: translateY(0); }
-.portfolio-card { transition: all 0.3s ease; }
-.portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
-.portfolio-overlay { opacity: 0; transition: opacity 0.3s ease; }
-.portfolio-card:hover .portfolio-overlay { opacity: 1; }
+/* Main Styles with new brand colors */
+
+/* Import Satoshi font */
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Typography */
+h1, h2, h3 { 
+    font-family: 'Satoshi', 'Inter', sans-serif; 
+    font-weight: 700;
+}
+
+/* Section animations */
+.section-fade { 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease, transform 0.6s ease; 
+}
+
+.section-fade.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* Portfolio cards */
+.portfolio-card { 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.portfolio-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 25px 50px -12px rgba(184, 162, 255, 0.25), 0 0 0 1px rgba(184, 162, 255, 0.1); 
+}
+
+.portfolio-overlay { 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    background: linear-gradient(135deg, rgba(184, 162, 255, 0.9), rgba(26, 26, 26, 0.8));
+}
+
+.portfolio-card:hover .portfolio-overlay { 
+    opacity: 1; 
+}
+
+/* Custom button styles */
+.btn-primary {
+    background: linear-gradient(135deg, #B8A2FF, #9B7EFF);
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 32px;
+    font-weight: 600;
+    font-family: 'Satoshi', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px 0 rgba(184, 162, 255, 0.39);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px 0 rgba(184, 162, 255, 0.5);
+}
+
+/* Enhanced card styles */
+.card-enhanced {
+    border-radius: 16px;
+    border: 1px solid rgba(234, 238, 170, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 249, 246, 0.8));
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-enhanced:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(184, 162, 255, 0.15);
+    border-color: rgba(184, 162, 255, 0.3);
+}
+
+/* Accent elements */
+.accent-bg {
+    background: linear-gradient(135deg, #EAEEAA, #F5F7C4);
+}
+
+/* Text colors */
+.text-brand-dark {
+    color: #1A1A1A;
+}
+
+.text-brand-primary {
+    color: #B8A2FF;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B8A2FF;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9B7EFF;
+}

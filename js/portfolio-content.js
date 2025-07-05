@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ].forEach(item => {
             const li = document.createElement('li');
-            li.className = "flex items-center gap-3 border border-gray-200 rounded-lg p-3 shadow-sm hover:shadow-md transition-all bg-white";
+            li.className = "flex items-center gap-3 border border-gray-200 rounded-2xl p-3 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 bg-white";
             li.innerHTML = `
                 <div class="flex-shrink-0">
                     <img src="${item.img}" alt="${item.name}" class="w-12 h-12 object-cover rounded" />
                 </div>
                 <div class="flex-grow">
-                    <a href="${item.url}" target="_blank" class="hover:text-primary text-base font-medium transition-colors">${item.name}</a>
+                    <a href="${item.url}" target="_blank" class="hover:text-primary text-base font-medium font-display transition-colors">${item.name}</a>
                 </div>
             `;
             videosList.appendChild(li);
@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ].forEach((item, index) => {
             const li = document.createElement('li');
-            li.className = "flex items-center gap-2 p-2 border-b border-gray-200 cursor-pointer hover:bg-gray-50 transition-colors";
+            li.className = "flex items-center gap-2 p-3 border-b border-gray-200 cursor-pointer hover:bg-gray-50 rounded-lg transition-colors";
             li.setAttribute('data-modal-target', `social-modal-${index}`);
             li.innerHTML = `
                 <img src="images/icons8-linkedin.svg" alt="LinkedIn" class="w-6 h-6" />
-                <span class="hover:text-primary text-base transition-colors">${item.name}</span>
+                <span class="hover:text-primary text-base font-display transition-colors">${item.name}</span>
             `;
             li.addEventListener('click', function() {
                 openModal(item.name, item.img);
@@ -108,10 +108,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ].forEach(item => {
             const li = document.createElement('li');
-            li.className = "flex items-center gap-2 p-2 border-b border-gray-200 hover:bg-gray-50 transition-colors";
+            li.className = "flex items-center gap-2 p-3 border-b border-gray-200 hover:bg-gray-50 rounded-lg transition-colors";
             li.innerHTML = `
                 <img src="${item.img}" alt="${item.name}" class="w-12 h-12 object-cover rounded" />
-                <a href="${item.url}" target="_blank" class="hover:text-primary text-base transition-colors">${item.name}</a>
+                <a href="${item.url}" target="_blank" class="hover:text-primary text-base font-display transition-colors">${item.name}</a>
             `;
             slidesList.appendChild(li);
         });
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         ].forEach(item => {
             const li = document.createElement('li');
-            li.className = "border border-gray-200 rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer";
+            li.className = "border border-gray-200 rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer";
             
             // Make the entire card clickable
             li.onclick = function() {
@@ -152,9 +152,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="p-3">
                     <div class="flex items-center gap-2">
                         <img src="${item.img}" alt="${item.name}" class="w-12 h-12 object-cover rounded" />
-                        <h4 class="text-base font-medium">${item.name}</h4>
+                        <h4 class="text-base font-medium font-display text-dark">${item.name}</h4>
                     </div>
-                    <p class="text-xs text-gray-600 mt-2">${item.summary}</p>
+                    <p class="text-xs text-gray-700 mt-2">${item.summary}</p>
                 </div>
             `;
             guidesList.appendChild(li);

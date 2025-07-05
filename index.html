@@ -16,18 +16,18 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Satoshi:wght@300;400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-white text-gray-900 min-h-screen">
     <!-- Header/Navigation -->
-    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur border-gray-200">
         <div class="container flex h-16 max-w-screen-xl items-center justify-between mx-auto px-4">
-            <a href="#" class="flex items-center font-semibold text-lg font-mono tracking-tight" id="typewriter-text">:></a>
+            <a href="#" class="flex items-center font-bold text-xl font-display tracking-tight text-dark" id="typewriter-text">:></a>
             
             <!-- Mobile menu button -->
-            <button id="mobile-menu-button" class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="md:hidden flex items-center text-dark">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -35,11 +35,11 @@
             
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex gap-6">
-                <a href="#about" class="text-sm font-medium hover:text-primary transition-colors">About</a>
-                <a href="#expertise" class="text-sm font-medium hover:text-primary transition-colors">Expertise</a>
-                <a href="#portfolio" class="text-sm font-medium hover:text-primary transition-colors">Portfolio</a>
-                <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium hover:text-primary transition-colors" target="_blank">Resume</a>
-                <a href="#contact" class="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+                <a href="#about" class="text-sm font-medium text-dark hover:text-primary transition-colors">About</a>
+                <a href="#expertise" class="text-sm font-medium text-dark hover:text-primary transition-colors">Expertise</a>
+                <a href="#portfolio" class="text-sm font-medium text-dark hover:text-primary transition-colors">Portfolio</a>
+                <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium text-dark hover:text-primary transition-colors" target="_blank">Resume</a>
+                <a href="#contact" class="text-sm font-medium text-dark hover:text-primary transition-colors">Contact</a>
             </nav>
         </div>
         
@@ -47,25 +47,25 @@
         <div id="mobile-menu" class="hidden bg-white border-b">
             <div class="container max-w-screen-xl mx-auto px-4 py-2">
                 <nav class="flex flex-col space-y-3">
-                    <a href="#about" class="text-sm font-medium hover:text-primary py-2 transition-colors">About</a>
-                    <a href="#expertise" class="text-sm font-medium hover:text-primary py-2 transition-colors">Expertise</a>
-                    <a href="#portfolio" class="text-sm font-medium hover:text-primary py-2 transition-colors">Portfolio</a>
-                    <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium hover:text-primary py-2 transition-colors" target="_blank">Resume</a>
-                    <a href="#contact" class="text-sm font-medium hover:text-primary py-2 transition-colors">Contact</a>
+                    <a href="#about" class="text-sm font-medium text-dark hover:text-primary py-2 transition-colors">About</a>
+                    <a href="#expertise" class="text-sm font-medium text-dark hover:text-primary py-2 transition-colors">Expertise</a>
+                    <a href="#portfolio" class="text-sm font-medium text-dark hover:text-primary py-2 transition-colors">Portfolio</a>
+                    <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium text-dark hover:text-primary py-2 transition-colors" target="_blank">Resume</a>
+                    <a href="#contact" class="text-sm font-medium text-dark hover:text-primary py-2 transition-colors">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
     
         <!-- Hero Section -->
-        <section id="about" class="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-50 section-fade">
+        <section id="about" class="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white to-secondary section-fade">
             <div class="container max-w-screen-xl px-4 mx-auto">
                 <div class="flex flex-col items-center text-center mb-16">
-                    <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-4">Nicole Annen</h1>
-                    <p class="text-xl md:text-2xl font-medium text-gray-600 mb-6">Full Stack Marketing Pro</p>
+                    <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-4 font-display text-dark">Nicole Annen</h1>
+                    <p class="text-xl md:text-2xl font-medium text-gray-700 mb-6 font-display">Full Stack Marketing Pro</p>
                     <div class="flex flex-col sm:flex-row gap-4 mt-2">
-                        <a href="content/nicole_annen_resume.pdf" class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-white shadow transition-colors hover:bg-primary/90" target="_blank">View Resume</a>
-                        <a href="https://linkedin.com/in/nicoleannen" class="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-50" target="_blank"><i class="fab fa-linkedin-in mr-2"></i>Connect on LI</a>
+                        <a href="content/nicole_annen_resume.pdf" class="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-semibold text-white shadow-lg transition-all hover:bg-primary/90 hover:shadow-xl font-display" target="_blank">View Resume</a>
+                        <a href="https://linkedin.com/in/nicoleannen" class="inline-flex h-12 items-center justify-center rounded-full border-2 border-dark px-8 text-sm font-semibold text-dark shadow-sm transition-all hover:bg-dark hover:text-white font-display" target="_blank"><i class="fab fa-linkedin-in mr-2"></i>Connect on LI</a>
                     </div>
                 </div>
                 
@@ -75,15 +75,15 @@
                         <img src="images/nicoleannen.jpg" alt="Nicole Annen" class="absolute inset-0 h-full w-full object-cover" style="transform: scaleX(-1);" />
                     </div>
                     <div class="space-y-6 text-left order-2 md:order-2">
-                        <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm text-gray-700">About Me</div>
-                        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Hi! I'm Nicole, nice to market with you.</h2>
-                        <p class="text-gray-600 leading-relaxed">
+                        <div class="inline-block rounded-full bg-accent px-4 py-2 text-sm font-medium text-dark">About Me</div>
+                        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-display text-dark">Hi! I'm Nicole, nice to market with you.</h2>
+                        <p class="text-gray-700 leading-relaxed">
                             I am a results-driven marketing professional with over 10 years of experience in B2B SaaS, excelling in cross-functional project management and demand generation. Throughout my career, I've worked with companies like Blue Margin, Digital Risk Group/Spadafy, Key Bridge Advisors, and Value Technology Foundation.
                         </p>
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed">
                             My expertise spans content creation, SEO, social media, email automation, and budget tracking. I'm proficient with various project management tools and passionate about tech-driven solutions like blockchain.
                         </p>
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed">
                             With a background in psychology from the University of Colorado, I apply psychological insights to craft marketing strategies that resonate with target audiences.
                         </p>
                     </div>
@@ -92,75 +92,75 @@
         </section>
     
         <!-- Expertise Section -->
-        <section id="expertise" class="w-full py-12 md:py-24 bg-gray-50 section-fade">
+        <section id="expertise" class="w-full py-12 md:py-24 bg-secondary section-fade">
             <div class="container max-w-screen-xl px-4 mx-auto">
                 <div class="flex flex-col items-center justify-center space-y-4 text-center">
-                    <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-white">Expertise</div>
-                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Core Marketing Skills</h2>
-                    <p class="max-w-[700px] text-gray-600 md:text-lg">
+                    <div class="inline-block rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">Expertise</div>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-display text-dark">Core Marketing Skills</h2>
+                    <p class="max-w-[700px] text-gray-700 md:text-lg">
                         My diverse skill set allows me to develop and execute comprehensive marketing strategies that drive results.
                     </p>
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
-                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="rounded-full bg-primary/10 p-3 mb-2">
+                    <div class="flex flex-col items-center space-y-2 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="rounded-full bg-primary/15 p-3 mb-2">
                             <i class="fas fa-calendar-check text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Event Marketing & Sales Enablement</h3>
-                        <p class="text-sm text-gray-600 text-center">
+                        <h3 class="text-xl font-bold font-display text-dark">Event Marketing & Sales Enablement</h3>
+                        <p class="text-sm text-gray-700 text-center">
                             Designing and executing targeted sales enablement events including lunch & learns, cocktail events, and ICP-focused networking experiences that drive qualified leads and strengthen client relationships.
                         </p>
                     </div>
-                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="rounded-full bg-primary/10 p-3 mb-2">
+                    <div class="flex flex-col items-center space-y-2 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="rounded-full bg-primary/15 p-3 mb-2">
                             <i class="fas fa-chart-line text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Digital Marketing Strategy</h3>
-                        <p class="text-sm text-gray-600 text-center">
+                        <h3 class="text-xl font-bold font-display text-dark">Digital Marketing Strategy</h3>
+                        <p class="text-sm text-gray-700 text-center">
                             Developing comprehensive marketing strategies that align with business objectives and drive measurable results across all digital channels.
                         </p>
                     </div>
-                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="rounded-full bg-primary/10 p-3 mb-2">
+                    <div class="flex flex-col items-center space-y-2 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="rounded-full bg-primary/15 p-3 mb-2">
                             <i class="fas fa-bullhorn text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">LinkedIn & YouTube Advertising</h3>
-                        <p class="text-sm text-gray-600 text-center">
+                        <h3 class="text-xl font-bold font-display text-dark">LinkedIn & YouTube Advertising</h3>
+                        <p class="text-sm text-gray-700 text-center">
                             Creating and managing targeted advertising campaigns on LinkedIn and YouTube to reach B2B audiences, drive engagement, and generate qualified leads through strategic content and precise targeting.
                         </p>
                     </div>
-                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="rounded-full bg-primary/10 p-3 mb-2">
+                    <div class="flex flex-col items-center space-y-2 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="rounded-full bg-primary/15 p-3 mb-2">
                             <i class="fas fa-robot text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">AI Marketing Automation</h3>
-                        <p class="text-sm text-gray-600 text-center">
+                        <h3 class="text-xl font-bold font-display text-dark">AI Marketing Automation</h3>
+                        <p class="text-sm text-gray-700 text-center">
                             Leveraging AI tools like OpenAI, Anthropic, xAI, and Gemini to automate and enhance marketing efforts, improving efficiency and personalization.
                         </p>
                     </div>
-                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="rounded-full bg-primary/10 p-3 mb-2">
+                    <div class="flex flex-col items-center space-y-2 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="rounded-full bg-primary/15 p-3 mb-2">
                             <i class="fas fa-search text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">SEO & Analytics</h3>
-                        <p class="text-sm text-gray-600 text-center">
+                        <h3 class="text-xl font-bold font-display text-dark">SEO & Analytics</h3>
+                        <p class="text-sm text-gray-700 text-center">
                             Optimizing content for search engines and analyzing data to drive strategic marketing decisions and improve ROI.
                         </p>
                     </div>
-                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="rounded-full bg-primary/10 p-3 mb-2">
+                    <div class="flex flex-col items-center space-y-2 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                        <div class="rounded-full bg-primary/15 p-3 mb-2">
                             <i class="fas fa-pen-fancy text-primary text-xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Content Development</h3>
-                        <p class="text-sm text-gray-600 text-center">
+                        <h3 class="text-xl font-bold font-display text-dark">Content Development</h3>
+                        <p class="text-sm text-gray-700 text-center">
                             Creating compelling content using tools like Canva, Adobe Suite, Davinci, and CapCut to engage audiences and drive conversions.
                         </p>
                     </div>
                 </div>
     
                 <div class="container max-w-screen-xl px-4 mx-auto">
-                    <h2 class="text-2xl font-normal tracking-tighter sm:text-3xl mt-8 text-center">Tool Expertise</h2>
+                    <h2 class="text-2xl font-semibold tracking-tighter sm:text-3xl mt-8 text-center font-display text-dark">Tool Expertise</h2>
                     <div class="flex flex-wrap justify-center gap-4 mt-4">
                         <div title="Adobe Photoshop">
                             <img src="images/icons8-adobe-photoshop-50.svg" alt="Adobe Photoshop" width="50"/>
@@ -271,9 +271,9 @@
     <section id="portfolio" class="w-full py-12 md:py-24 bg-white section-fade">
         <div class="container max-w-screen-xl px-4 mx-auto">
             <div class="flex flex-col items-center justify-center space-y-4 text-center">
-                <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-white">Portfolio</div>
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Featured Work</h2>
-                <p class="max-w-[700px] text-gray-600 md:text-lg">
+                <div class="inline-block rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">Portfolio</div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-display text-dark">Featured Work</h2>
+                <p class="max-w-[700px] text-gray-700 md:text-lg">
                     A selection of my recent marketing projects across various industries and formats.
                 </p>
             </div>
@@ -282,70 +282,70 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                 
                 <!-- Digital Marketing -->
-                <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm portfolio-item content category-card bg-white" data-category="digital-marketing">
+                <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm portfolio-item content category-card bg-white" data-category="digital-marketing">
                     <div class="relative aspect-video overflow-hidden">
                         <img src="images/Blue Margin Guide.png" alt="Digital Marketing" class="h-full w-full object-cover transition-all hover:scale-105" />
                         <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                             <div class="text-center p-4">
-                                <h3 class="text-lg font-bold text-white">Digital Marketing</h3>
+                                <h3 class="text-lg font-bold text-white font-display">Digital Marketing</h3>
                                 <p class="text-sm text-white/80">Comprehensive digital marketing strategies</p>
                             </div>
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-semibold">Digital Marketing</h3>
-                        <p class="text-sm text-gray-600 mt-1">Strategic digital marketing campaigns designed to increase brand visibility and drive conversions.</p>
+                        <h3 class="font-semibold font-display text-dark">Digital Marketing</h3>
+                        <p class="text-sm text-gray-700 mt-1">Strategic digital marketing campaigns designed to increase brand visibility and drive conversions.</p>
                     </div>
                 </div>
                 
                 <!-- Event Marketing -->
-                <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm portfolio-item booth-design category-card bg-white" data-category="event-marketing">
+                <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm portfolio-item booth-design category-card bg-white" data-category="event-marketing">
                     <div class="relative aspect-video overflow-hidden">
                         <img src="images/eventmarketing.png" alt="Event Marketing" class="h-full w-full object-cover transition-all hover:scale-105" />
                         <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                             <div class="text-center p-4">
-                                <h3 class="text-lg font-bold text-white">Event Marketing</h3>
+                                <h3 class="text-lg font-bold text-white font-display">Event Marketing</h3>
                                 <p class="text-sm text-white/80">Sales enablement & networking events</p>
                             </div>
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-semibold">Event Marketing</h3>
-                        <p class="text-sm text-gray-600 mt-1">Sales enablement events including lunch & learns, cocktail events, and ICP-focused networking experiences that drive qualified leads.</p>
+                        <h3 class="font-semibold font-display text-dark">Event Marketing</h3>
+                        <p class="text-sm text-gray-700 mt-1">Sales enablement events including lunch & learns, cocktail events, and ICP-focused networking experiences that drive qualified leads.</p>
                     </div>
                 </div>
                 
                 <!-- One Pagers -->
-                <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm portfolio-item content category-card bg-white" data-category="one-pagers">
+                <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm portfolio-item content category-card bg-white" data-category="one-pagers">
                     <div class="relative aspect-video overflow-hidden">
                         <img src="images/onepagers.png" alt="One Pagers" class="h-full w-full object-cover transition-all hover:scale-105" />
                         <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                             <div class="text-center p-4">
-                                <h3 class="text-lg font-bold text-white">One Pagers</h3>
+                                <h3 class="text-lg font-bold text-white font-display">One Pagers</h3>
                                 <p class="text-sm text-white/80">Concise and impactful marketing materials</p>
                             </div>
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-semibold">One Pagers</h3>
-                        <p class="text-sm text-gray-600 mt-1">Designed and developed concise one-page marketing materials that effectively communicate value propositions.</p>
+                        <h3 class="font-semibold font-display text-dark">One Pagers</h3>
+                        <p class="text-sm text-gray-700 mt-1">Designed and developed concise one-page marketing materials that effectively communicate value propositions.</p>
                     </div>
                 </div>
                 
                 <!-- Podcasting -->
-                <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm portfolio-item social-media category-card bg-white" data-category="podcasting">
+                <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm portfolio-item social-media category-card bg-white" data-category="podcasting">
                     <div class="relative aspect-video overflow-hidden">
                         <img src="images/podcasting.png" alt="Podcasting" class="h-full w-full object-cover transition-all hover:scale-105" />
                         <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                             <div class="text-center p-4">
-                                <h3 class="text-lg font-bold text-white">Podcasting</h3>
+                                <h3 class="text-lg font-bold text-white font-display">Podcasting</h3>
                                 <p class="text-sm text-white/80">Professional podcast production and promotion</p>
                             </div>
                         </div>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-semibold">Podcasting</h3>
-                        <p class="text-sm text-gray-600 mt-1">Full-service podcast production, including content strategy, recording, editing, and promotion to build audience engagement.</p>
+                        <h3 class="font-semibold font-display text-dark">Podcasting</h3>
+                        <p class="text-sm text-gray-700 mt-1">Full-service podcast production, including content strategy, recording, editing, and promotion to build audience engagement.</p>
                     </div>
                 </div>
             </div>
@@ -354,31 +354,31 @@
             <div class="mt-12 category-content-container">
                 <!-- Digital Marketing Content -->
                 <div id="digital-marketing-content" class="category-content hidden">
-                    <h2 class="text-2xl font-bold mb-6">Digital Marketing</h2>
+                    <h2 class="text-2xl font-bold mb-6 font-display text-dark">Digital Marketing</h2>
                     <div class="space-y-8">
                         <div id="digital-marketing-guides" class="space-y-4">
-                            <h3 class="text-xl font-semibold">Guides</h3>
+                            <h3 class="text-xl font-semibold font-display text-dark">Guides</h3>
                             <ul class="grid grid-cols-1 md:grid-cols-3 gap-4" id="guides-list"></ul>
                         </div>
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div class="space-y-6">
                                 <div id="digital-marketing-slides" class="space-y-4">
-                                    <h3 class="text-xl font-semibold">Slides</h3>
+                                    <h3 class="text-xl font-semibold font-display text-dark">Slides</h3>
                                     <ul class="space-y-3" id="slides-list"></ul>
                                 </div>
                             </div>
                             
                             <div class="space-y-6">
                                 <div id="digital-marketing-social" class="space-y-4">
-                                    <h3 class="text-xl font-semibold">Social Media</h3>
+                                    <h3 class="text-xl font-semibold font-display text-dark">Social Media</h3>
                                     <ul class="space-y-3" id="social-media-list"></ul>
                                 </div>
                             </div>
                         </div>
                         
                         <div id="digital-marketing-videos" class="space-y-4 mt-8">
-                            <h3 class="text-xl font-semibold">Videos</h3>
+                            <h3 class="text-xl font-semibold font-display text-dark">Videos</h3>
                             <ul class="space-y-3" id="videos-list"></ul>
                         </div>
                     </div>
@@ -386,11 +386,11 @@
                 
                 <!-- Event Marketing Content -->
                 <div id="event-marketing-content" class="category-content hidden">
-                    <h2 class="text-2xl font-bold mb-6">Event Marketing & Sales Enablement</h2>
-                    <div class="mb-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-                        <h3 class="text-lg font-semibold text-blue-900 mb-3">Sales Enablement Events Expertise</h3>
-                        <p class="text-blue-800 mb-4">I specialize in creating targeted sales enablement events that connect with your ideal customer profile (ICP) and drive meaningful business relationships:</p>
-                        <ul class="list-disc pl-5 space-y-2 text-blue-800">
+                    <h2 class="text-2xl font-bold mb-6 font-display text-dark">Event Marketing & Sales Enablement</h2>
+                    <div class="mb-8 bg-accent/30 border border-accent rounded-2xl p-6">
+                        <h3 class="text-lg font-semibold text-dark mb-3 font-display">Sales Enablement Events Expertise</h3>
+                        <p class="text-gray-800 mb-4">I specialize in creating targeted sales enablement events that connect with your ideal customer profile (ICP) and drive meaningful business relationships:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-800">
                             <li><strong>Lunch & Learn Sessions:</strong> Educational events that position your company as a thought leader while building relationships with prospects</li>
                             <li><strong>Cocktail Events & Networking:</strong> Sophisticated networking experiences designed to foster connections with key decision-makers</li>
                             <li><strong>ICP-Focused Experiences:</strong> Tailored events that speak directly to your ideal customer's pain points and interests</li>
@@ -398,75 +398,75 @@
                             <li><strong>Industry Workshops:</strong> Hands-on sessions that demonstrate your expertise while generating qualified leads</li>
                         </ul>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Event Design & Booth Materials</h3>
+                    <h3 class="text-xl font-semibold mb-4 font-display text-dark">Event Design & Booth Materials</h3>
                     <div id="event-marketing-list"></div>
                 </div>
                 
                 <!-- One Pagers Content -->
                 <div id="one-pagers-content" class="category-content hidden">
-                    <h2 class="text-2xl font-bold mb-6">One Pagers</h2>
+                    <h2 class="text-2xl font-bold mb-6 font-display text-dark">One Pagers</h2>
                     <div id="one-pagers-list"></div>
                 </div>
                 
                 <!-- Podcasting Content -->
                 <div id="podcasting-content" class="category-content hidden">
-                    <img src="images/channels4_banner.jpg" alt="Dashboard Effect Podcast Banner" class="w-full rounded-lg mb-4" />
+                    <img src="images/channels4_banner.jpg" alt="Dashboard Effect Podcast Banner" class="w-full rounded-2xl mb-4" />
                     <p class="text-xl text-primary mb-6 font-medium text-center">Nicole edits, produces, and manages distribution and marketing for the Dashboard Effect Podcast, part of Blue Margin<br>Over 7,000 followers!</p>
                     
-                    <h2 class="text-2xl font-bold mb-6">Find the podcast here:</h2>
+                    <h2 class="text-2xl font-bold mb-6 font-display text-dark">Find the podcast here:</h2>
                     
                     <!-- Podcast Platform Cards -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                         <!-- YouTube Card -->
-                        <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm bg-white">
+                        <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
                             <div class="relative aspect-video overflow-hidden">
                                 <img src="images/youtube.png" alt="YouTube" class="h-full w-full object-cover transition-all hover:scale-105" />
                                 <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                                     <div class="text-center p-4">
-                                        <h3 class="text-lg font-bold text-white">YouTube</h3>
+                                        <h3 class="text-lg font-bold text-white font-display">YouTube</h3>
                                         <p class="text-sm text-white/80">The Dashboard Effect Podcast</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="p-4">
-                                <h3 class="font-semibold">YouTube</h3>
-                                <p class="text-sm text-gray-600 mt-1">Watch the latest episodes and interviews.</p>
+                                <h3 class="font-semibold font-display text-dark">YouTube</h3>
+                                <p class="text-sm text-gray-700 mt-1">Watch the latest episodes and interviews.</p>
                                 <a href="https://www.youtube.com/@thedashboardeffectpodcast" target="_blank" class="inline-block mt-2 text-primary hover:underline">Watch Now</a>
                             </div>
                         </div>
                         
                         <!-- Apple Podcasts Card -->
-                        <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm bg-white">
+                        <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
                             <div class="relative aspect-video overflow-hidden">
                                 <img src="images/apple.webp" alt="Apple Podcasts" class="h-full w-full object-cover transition-all hover:scale-105" />
                                 <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                                     <div class="text-center p-4">
-                                        <h3 class="text-lg font-bold text-white">Apple Podcasts</h3>
+                                        <h3 class="text-lg font-bold text-white font-display">Apple Podcasts</h3>
                                         <p class="text-sm text-white/80">The Dashboard Effect Podcast</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="p-4">
-                                <h3 class="font-semibold">Apple Podcasts</h3>
-                                <p class="text-sm text-gray-600 mt-1">Listen on your favorite Apple devices.</p>
+                                <h3 class="font-semibold font-display text-dark">Apple Podcasts</h3>
+                                <p class="text-sm text-gray-700 mt-1">Listen on your favorite Apple devices.</p>
                                 <a href="https://podcasts.apple.com/us/podcast/the-dashboard-effect/id1634065977" target="_blank" class="inline-block mt-2 text-primary hover:underline">Listen Now</a>
                             </div>
                         </div>
                         
                         <!-- Spotify Card -->
-                        <div class="portfolio-card rounded-lg overflow-hidden border border-gray-200 shadow-sm bg-white">
+                        <div class="portfolio-card rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
                             <div class="relative aspect-video overflow-hidden">
                                 <img src="images/spotify.png" alt="Spotify" class="h-full w-full object-cover transition-all hover:scale-105" />
                                 <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
                                     <div class="text-center p-4">
-                                        <h3 class="text-lg font-bold text-white">Spotify</h3>
+                                        <h3 class="text-lg font-bold text-white font-display">Spotify</h3>
                                         <p class="text-sm text-white/80">The Dashboard Effect Podcast</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="p-4">
-                                <h3 class="font-semibold">Spotify</h3>
-                                <p class="text-sm text-gray-600 mt-1">Stream episodes on Spotify.</p>
+                                <h3 class="font-semibold font-display text-dark">Spotify</h3>
+                                <p class="text-sm text-gray-700 mt-1">Stream episodes on Spotify.</p>
                                 <a href="https://open.spotify.com/show/1OGu0m8GV0Ga3iVrq6L536" target="_blank" class="inline-block mt-2 text-primary hover:underline">Stream Now</a>
                             </div>
                         </div>
@@ -475,7 +475,7 @@
                 
                 <!-- Back button -->
                 <div class="mt-8 text-center">
-                    <button id="back-to-categories" class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-white shadow hover:bg-primary/90 transition-colors hidden">
+                    <button id="back-to-categories" class="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-semibold text-white shadow-lg hover:bg-primary/90 transition-all font-display hidden">
                         Back to Categories
                     </button>
                 </div>
@@ -484,65 +484,65 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="w-full py-12 md:py-24 bg-gray-50 section-fade">
+    <section id="resume" class="w-full py-12 md:py-24 bg-secondary section-fade">
         <div class="container max-w-screen-xl px-4 mx-auto">
             <div class="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-                <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-white">Resume</div>
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Professional Experience</h2>
-                <p class="max-w-[700px] text-gray-600 md:text-lg">
+                <div class="inline-block rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">Resume</div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-display text-dark">Professional Experience</h2>
+                <p class="max-w-[700px] text-gray-700 md:text-lg">
                     My career journey and qualifications in marketing and content creation.
                 </p>
             </div>
             
             <div class="space-y-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
                     <div class="flex flex-col md:flex-row justify-between mb-4">
                         <div>
-                            <h3 class="text-xl font-bold">Marketing Program Manager & Lead Content Creator</h3>
-                            <p class="text-lg text-gray-600">Blue Margin, Inc</p>
+                            <h3 class="text-xl font-bold font-display text-dark">Marketing Program Manager & Lead Content Creator</h3>
+                            <p class="text-lg text-gray-700">Blue Margin, Inc</p>
                         </div>
-                        <div class="text-gray-600">
+                        <div class="text-gray-700">
                             <p>Hybrid - Fort Collins, CO</p>
                             <p>December 2023 – Present</p>
                         </div>
                     </div>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
                         <li>Provided strategy and execution of all marketing, product branding, and social media campaigns, resulting in first profitable year (2024).</li>
                         <li>Managed and produced/edited 'The Dashboard Effort' podcast, driving a 130% ROI on ad spend and 1400% YouTube subscriber growth in 9 months via analytics-driven reallocation.</li>
                         <li>Liaised between sales and product teams, delivering on-demand content, optimized landing pages, and AI-driven email campaigns.</li>
                     </ul>
                 </div>
                 
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
                     <div class="flex flex-col md:flex-row justify-between mb-4">
                         <div>
-                            <h3 class="text-xl font-bold">Marketing Specialist (Contract)</h3>
-                            <p class="text-lg text-gray-600">Digital Risk Group / Spadafy</p>
+                            <h3 class="text-xl font-bold font-display text-dark">Marketing Specialist (Contract)</h3>
+                            <p class="text-lg text-gray-700">Digital Risk Group / Spadafy</p>
                         </div>
-                        <div class="text-gray-600">
+                        <div class="text-gray-700">
                             <p>Remote - Seattle, WA</p>
                             <p>June 2023 – November 2023</p>
                         </div>
                     </div>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
                         <li>Developed campaigns for VDI Managed Services, securing #1 SEO rankings for key search terms.</li>
                         <li>Designed conference collateral & booth materials for VMWare Explore, enhancing brand visibility.</li>
                         <li>Produced video advertising content, driving engagement and lead generation.</li>
                     </ul>
                 </div>
                 
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
                     <div class="flex flex-col md:flex-row justify-between mb-4">
                         <div>
-                            <h3 class="text-xl font-bold">Associate Consultant (Contract)</h3>
-                            <p class="text-lg text-gray-600">Key Bridge Advisors</p>
+                            <h3 class="text-xl font-bold font-display text-dark">Associate Consultant (Contract)</h3>
+                            <p class="text-lg text-gray-700">Key Bridge Advisors</p>
                         </div>
-                        <div class="text-gray-600">
+                        <div class="text-gray-700">
                             <p>Remote - Washington, D.C.</p>
                             <p>October 2022 – October 2023</p>
                         </div>
                     </div>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
                         <li>Provided digital marketing services for blockchain technology clients, designing newsletters and managing email campaigns to boost engagement.</li>
                         <li>Collaborated with internal teams and clients to develop marketing strategies aligned with tech-driven objectives.</li>
                         </ul>
@@ -551,24 +551,24 @@
             
             <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Education</h3>
+                    <h3 class="text-xl font-bold mb-4 font-display text-dark">Education</h3>
                     <div class="space-y-4">
                         <div>
-                            <p class="font-semibold">Bachelor of Arts - Psychology</p>
-                            <p class="text-gray-600">University of Colorado | Boulder, CO</p>
-                            <p class="text-gray-600">August 2018 – May 2021</p>
+                            <p class="font-semibold font-display text-dark">Bachelor of Arts - Psychology</p>
+                            <p class="text-gray-700">University of Colorado | Boulder, CO</p>
+                            <p class="text-gray-700">August 2018 – May 2021</p>
                         </div>
                         <div>
-                            <p class="font-semibold">Associate of Arts and Sciences</p>
-                            <p class="text-gray-600">Johnson County Community College | Overland Park, KS</p>
-                            <p class="text-gray-600">2007 – 2010</p>
+                            <p class="font-semibold font-display text-dark">Associate of Arts and Sciences</p>
+                            <p class="text-gray-700">Johnson County Community College | Overland Park, KS</p>
+                            <p class="text-gray-700">2007 – 2010</p>
                         </div>
                     </div>
                 </div>
                 
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Certifications</h3>
-                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                    <h3 class="text-xl font-bold mb-4 font-display text-dark">Certifications</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
                         <li>Become an AI-Powered Marketer – SEMrush (Jul 2024)</li>
                         <li>Mastering YouTube Search Trends and SEO Strategies – SEMrush (Apr 2024)</li>
                         <li>HubSpot CMS for Marketers – HubSpot (Feb 2024)</li>
@@ -583,46 +583,46 @@
     <section id="contact" class="w-full py-12 md:py-24 bg-white section-fade">
         <div class="container max-w-screen-xl px-4 mx-auto">
             <div class="flex flex-col items-center justify-center space-y-4 text-center mb-8">
-                <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-white">Contact</div>
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Get In Touch</h2>
-                <p class="max-w-[700px] text-gray-600 md:text-lg">
+                <div class="inline-block rounded-full bg-primary px-4 py-2 text-sm font-medium text-white">Contact</div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-display text-dark">Get In Touch</h2>
+                <p class="max-w-[700px] text-gray-700 md:text-lg">
                     Interested in working together? Reach out to discuss your marketing needs.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <!-- Schedule a Meeting Card -->
-                <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all p-4 flex flex-col items-center text-center">
-                    <div class="rounded-full bg-primary/10 p-3 mb-2">
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 p-4 flex flex-col items-center text-center">
+                    <div class="rounded-full bg-primary/15 p-3 mb-2">
                         <i class="fas fa-calendar-alt text-primary"></i>
                     </div>
-                    <h3 class="font-semibold text-base mb-1">Calendly</h3>
-                    <p class="text-gray-600 text-xs mb-2">Book a meeting</p>
-                    <a href="https://calendly.com/nicolecannen" target="_blank" class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-3 text-xs font-medium text-white shadow hover:bg-primary/90 transition-colors mt-auto">
+                    <h3 class="font-semibold text-base mb-1 font-display text-dark">Calendly</h3>
+                    <p class="text-gray-700 text-xs mb-2">Book a meeting</p>
+                    <a href="https://calendly.com/nicolecannen" target="_blank" class="inline-flex h-10 items-center justify-center rounded-full bg-primary px-4 text-xs font-semibold text-white shadow-lg hover:bg-primary/90 transition-all mt-auto font-display">
                         Book Now
                     </a>
                 </div>
                 
                 <!-- Email Card -->
-                <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all p-4 flex flex-col items-center text-center">
-                    <div class="rounded-full bg-primary/10 p-3 mb-2">
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 p-4 flex flex-col items-center text-center">
+                    <div class="rounded-full bg-primary/15 p-3 mb-2">
                         <i class="fas fa-envelope text-primary"></i>
                     </div>
-                    <h3 class="font-semibold text-base mb-1">Email</h3>
-                    <p class="text-gray-600 text-xs mb-2">Send a message</p>
-                    <a href="mailto:nicolecannen@gmail.com" class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-3 text-xs font-medium text-white shadow hover:bg-primary/90 transition-colors mt-auto">
+                    <h3 class="font-semibold text-base mb-1 font-display text-dark">Email</h3>
+                    <p class="text-gray-700 text-xs mb-2">Send a message</p>
+                    <a href="mailto:nicolecannen@gmail.com" class="inline-flex h-10 items-center justify-center rounded-full bg-primary px-4 text-xs font-semibold text-white shadow-lg hover:bg-primary/90 transition-all mt-auto font-display">
                         Email Me
                     </a>
                 </div>
                 
                 <!-- LinkedIn Card -->
-                <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all p-4 flex flex-col items-center text-center">
-                    <div class="rounded-full bg-primary/10 p-3 mb-2">
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 p-4 flex flex-col items-center text-center">
+                    <div class="rounded-full bg-primary/15 p-3 mb-2">
                         <i class="fab fa-linkedin-in text-primary"></i>
                     </div>
-                    <h3 class="font-semibold text-base mb-1">LinkedIn</h3>
-                    <p class="text-gray-600 text-xs mb-2">Connect with me</p>
-                    <a href="https://linkedin.com/in/nicoleannen" target="_blank" class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-3 text-xs font-medium text-white shadow hover:bg-primary/90 transition-colors mt-auto">
+                    <h3 class="font-semibold text-base mb-1 font-display text-dark">LinkedIn</h3>
+                    <p class="text-gray-700 text-xs mb-2">Connect with me</p>
+                    <a href="https://linkedin.com/in/nicoleannen" target="_blank" class="inline-flex h-10 items-center justify-center rounded-full bg-primary px-4 text-xs font-semibold text-white shadow-lg hover:bg-primary/90 transition-all mt-auto font-display">
                         Connect
                     </a>
                 </div>
@@ -634,7 +634,7 @@
         <div class="container max-w-screen-xl px-4 mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <p>&copy; 2025 Nicole Annen. All rights reserved.</p>
+                    <p class="font-display">&copy; 2025 Nicole Annen. All rights reserved.</p>
                 </div>
                 <div class="flex space-x-4">
                     <a href="https://linkedin.com/in/nicoleannen" target="_blank" class="hover:text-white/80 transition-colors"><i class="fab fa-linkedin-in"></i></a>
