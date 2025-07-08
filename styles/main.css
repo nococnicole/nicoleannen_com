@@ -28,13 +28,13 @@ h1, h2, h3 {
 
 .portfolio-card:hover { 
     transform: translateY(-8px); 
-    box-shadow: 0 25px 50px -12px rgba(184, 162, 255, 0.25), 0 0 0 1px rgba(184, 162, 255, 0.1); 
+    box-shadow: 0 25px 50px -12px rgba(255, 107, 90, 0.25), 0 0 0 1px rgba(255, 107, 90, 0.1); 
 }
 
 .portfolio-overlay { 
     opacity: 0; 
     transition: opacity 0.3s ease; 
-    background: linear-gradient(135deg, rgba(184, 162, 255, 0.9), rgba(26, 26, 26, 0.8));
+    background: linear-gradient(135deg, rgba(255, 107, 90, 0.9), rgba(0, 0, 0, 0.8));
 }
 
 .portfolio-card:hover .portfolio-overlay { 
@@ -43,48 +43,48 @@ h1, h2, h3 {
 
 /* Custom button styles */
 .btn-primary {
-    background: linear-gradient(135deg, #B8A2FF, #9B7EFF);
+    background: linear-gradient(135deg, #FF6B5A, #FF5A47);
     border: none;
     border-radius: 9999px;
     padding: 12px 32px;
     font-weight: 600;
     font-family: 'Satoshi', sans-serif;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 14px 0 rgba(184, 162, 255, 0.39);
+    box-shadow: 0 4px 14px 0 rgba(255, 107, 90, 0.39);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px 0 rgba(184, 162, 255, 0.5);
+    box-shadow: 0 8px 25px 0 rgba(255, 107, 90, 0.5);
 }
 
 /* Enhanced card styles */
 .card-enhanced {
     border-radius: 16px;
-    border: 1px solid rgba(234, 238, 170, 0.2);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(250, 249, 246, 0.8));
+    border: 1px solid rgba(229, 231, 235, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(249, 250, 251, 0.8));
     backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-enhanced:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(184, 162, 255, 0.15);
-    border-color: rgba(184, 162, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 107, 90, 0.15);
+    border-color: rgba(255, 107, 90, 0.3);
 }
 
 /* Accent elements */
 .accent-bg {
-    background: linear-gradient(135deg, #EAEEAA, #F5F7C4);
+    background: linear-gradient(135deg, #F9FAFB, #E5E7EB);
 }
 
 /* Text colors */
 .text-brand-dark {
-    color: #1A1A1A;
+    color: #000000;
 }
 
 .text-brand-primary {
-    color: #B8A2FF;
+    color: #FF6B5A;
 }
 
 /* Custom scrollbar */
@@ -97,10 +97,10 @@ h1, h2, h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #B8A2FF;
+    background: #FF6B5A;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #9B7EFF;
+    background: #FF5A47;
 }
