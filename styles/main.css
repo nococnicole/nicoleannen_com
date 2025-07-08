@@ -105,26 +105,21 @@ h1, h2, h3 {
     background: #FF5A47;
 }
 
-/* Tool expertise scrolling styles */
-.overflow-x-auto {
-    scrollbar-width: thin;
-    scrollbar-color: #FF6B5A #f1f1f1;
+/* Auto-scrolling animation for tool logos */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.overflow-x-auto::-webkit-scrollbar {
-    height: 6px;
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+    width: calc(200% + 2rem);
 }
 
-.overflow-x-auto::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-}
-
-.overflow-x-auto::-webkit-scrollbar-thumb {
-    background: #FF6B5A;
-    border-radius: 3px;
-}
-
-.overflow-x-auto::-webkit-scrollbar-thumb:hover {
-    background: #FF5A47;
+.animate-scroll:hover {
+    animation-play-state: paused;
 }
