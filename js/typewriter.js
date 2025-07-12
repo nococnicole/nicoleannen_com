@@ -1,6 +1,12 @@
 // Typewriter animation for header
 document.addEventListener('DOMContentLoaded', function() {
     const typewriterElement = document.getElementById('typewriter-text');
+    
+    if (!typewriterElement) {
+        console.error('Typewriter element not found');
+        return;
+    }
+    
     const phrases = [
         "Podcast Production",
         "Sales Enablement",
@@ -18,57 +24,51 @@ document.addEventListener('DOMContentLoaded', function() {
     let charIndex = 0;
     let isDeleting = false;
     let isWaiting = false;
-    let typingSpeed = 100; // Base typing speed in ms
+    let typingSpeed = 100;
     const promptText = ":> ";
     
     function typeWriter() {
+        if (!typewriterElement) return;
+        
         const currentPhrase = phrases[phraseIndex];
         
         if (isWaiting) {
-            // If we're in waiting mode (showing complete phrase), do nothing until wait time is over
             return;
         }
         
         if (isDeleting) {
-            // Deleting mode
             charIndex--;
-            typingSpeed = 50; // Faster when deleting
+            typingSpeed = 50;
         } else {
-            // Typing mode
             charIndex++;
-            typingSpeed = 100; // Normal speed when typing
+            typingSpeed = 100;
         }
         
-        // Set the text with the prompt and the current portion of the phrase
         typewriterElement.textContent = promptText + currentPhrase.substring(0, charIndex);
         
-        // Check if we've completed typing the phrase
         if (!isDeleting && charIndex === currentPhrase.length) {
-            // Complete phrase typed, start waiting period
             isWaiting = true;
             setTimeout(() => {
                 isWaiting = false;
                 isDeleting = true;
-                typeWriter(); // Continue with deletion after wait
-            }, 4000); // Wait 4 seconds before deleting
+                typeWriter();
+            }, 2000);
             return;
         }
         
-        // Check if we've completed deleting the phrase
         if (isDeleting && charIndex === 0) {
             isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next phrase
+            phraseIndex = (phraseIndex + 1) % phrases.length;
         }
         
-        // Schedule the next update
         if (!isWaiting) {
             setTimeout(typeWriter, typingSpeed);
         }
     }
     
-    // Start with just the prompt
+    // Initialize with prompt text
     typewriterElement.textContent = promptText;
     
-    // Start the animation after a short delay
+    // Start animation
     setTimeout(typeWriter, 1000);
 });
